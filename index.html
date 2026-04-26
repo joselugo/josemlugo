@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="José Manuel Lugo Martín - Full Stack Developer con +7 años de experiencia en desarrollo web y móvil">
+    <meta name="keywords" content="Full Stack Developer, .NET, Flutter, React, Azure, Portfolio">
+    <meta name="author" content="José Manuel Lugo Martín">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="José Manuel Lugo Martín - Full Stack Developer">
+    <meta property="og:description"
+        content="Desarrollador Full Stack con +7 años de experiencia construyendo soluciones web y móviles escalables">
+    <meta property="og:type" content="website">
+
+    <title>José Manuel Lugo Martín | Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS (utilities only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',
+                        accent: '#2563EB',
+                        'accent-light': '#3B82F6',
+                        'accent-cyan': '#06B6D4',
+                        dark: '#1E293B',
+                    },
+                    fontFamily: {
+                        'display': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 w-full z-50 py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold font-display">
+                    <span class="gradient-text">JL</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#inicio" class="text-sm font-medium hover:text-accent transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="text-sm font-medium hover:text-accent transition-colors">Sobre Mí</a>
+                    <a href="#experiencia"
+                        class="text-sm font-medium hover:text-accent transition-colors">Experiencia</a>
+                    <a href="#habilidades"
+                        class="text-sm font-medium hover:text-accent transition-colors">Habilidades</a>
+                    <a href="#proyectos" class="text-sm font-medium hover:text-accent transition-colors">Proyectos</a>
+                    <a href="#contacto" class="text-sm font-medium hover:text-accent transition-colors">Contacto</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-t border-accent/20">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="#inicio" class="text-sm font-medium hover:text-accent transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="text-sm font-medium hover:text-accent transition-colors">Sobre Mí</a>
+                <a href="#experiencia" class="text-sm font-medium hover:text-accent transition-colors">Experiencia</a>
+                <a href="#habilidades" class="text-sm font-medium hover:text-accent transition-colors">Habilidades</a>
+                <a href="#proyectos" class="text-sm font-medium hover:text-accent transition-colors">Proyectos</a>
+                <a href="#contacto" class="text-sm font-medium hover:text-accent transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Background Effects -->
+        <div class="hero__bg"></div>
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+
+        <div class="hero__content">
+            <!-- Text Content -->
+            <div class="hero__text">
+                <div class="hero__badge">
+                    <span class="badge">
+                        <i class="fas fa-code mr-2"></i>
+                        Disponible para nuevas oportunidades
+                    </span>
+                </div>
+
+                <h1 class="hero__title">
+                    José Manuel <span class="gradient-text">Lugo Martín</span>
+                </h1>
+
+                <h2 class="hero__subtitle">
+                    Full Stack Developer
+                </h2>
+
+                <p class="hero__description">
+                    Construyendo soluciones web y móviles escalables con +7 años de experiencia.
+                    Especializado en backend con .NET, arquitectura limpia y tecnologías cloud.
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="#contacto" class="btn btn--primary">
+                        <i class="fas fa-download"></i>
+                        Descargar CV
+                    </a>
+                    <a href="#contacto" class="btn btn--secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Contactar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="hero__image">
+                <div class="hero__img-wrapper">
+                    <img src="assets/profile.jpg" alt="José Manuel Lugo Martín - Full Stack Developer"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hero__img-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll">
+            <a href="#sobre-mi" class="hero__scroll-link">
+                <span class="mb-2">Ver más</span>
+                <i class="fas fa-chevron-down hero__scroll-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p class="section-subtitle">Conoce mi trayectoria profesional</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="animate-on-scroll">
+                        <div class="card">
+                            <h3 class="text-2xl font-bold font-display mb-4">
+                                Desarrollador <span class="gradient-text">Full Stack</span>
+                            </h3>
+                            <p class="text-gray-400 leading-relaxed mb-6">
+                                Con más de 7 años de experiencia en el desarrollo de soluciones web y móviles,
+                                me especializo en crear aplicaciones escalables utilizando tecnologías modernas
+                                y arquitecturas robustas.
+                            </p>
+                            <p class="text-gray-400 leading-relaxed mb-6">
+                                Mi enfoque está en el backend con .NET, pero también tengo experiencia sólida
+                                en desarrollo frontend con React, Angular y Vue. Además, trabajo con Flutter
+                                para soluciones móviles y Azure para infraestructura cloud.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="badge">
+                                    <i class="fas fa-check-circle mr-2 text-accent-cyan"></i>
+                                    Clean Architecture
+                                </span>
+                                <span class="badge">
+                                    <i class="fas fa-check-circle mr-2 text-accent-cyan"></i>
+                                    APIs REST
+                                </span>
+                                <span class="badge">
+                                    <i class="fas fa-check-circle mr-2 text-accent-cyan"></i>
+                                    Microservicios
+                                </span>
+                                <span class="badge">
+                                    <i class="fas fa-check-circle mr-2 text-accent-cyan"></i>
+                                    Aplicaciones Móviles
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animate-on-scroll">
+                        <div class="space-y-6">
+                            <!-- Achievement 1 -->
+                            <div class="card flex items-start gap-4">
+                                <div class="contact-icon flex-shrink-0">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Automatización del 90%</h4>
+                                    <p class="text-gray-400 text-sm">Procesos internos automatizados, reduciendo carga
+                                        operativa manual</p>
+                                </div>
+                            </div>
+
+                            <!-- Achievement 2 -->
+                            <div class="card flex items-start gap-4">
+                                <div class="contact-icon flex-shrink-0">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Reducción del 50%</h4>
+                                    <p class="text-gray-400 text-sm">En tiempos de respuesta de aplicaciones críticas
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Achievement 3 -->
+                            <div class="card flex items-start gap-4">
+                                <div class="contact-icon flex-shrink-0">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold mb-1">Mejora del 80%</h4>
+                                    <p class="text-gray-400 text-sm">En eficiencia operativa de los equipos de trabajo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <h2 class="section-title">Experiencia</h2>
+                <p class="section-subtitle">Mi trayectoria profesional</p>
+            </div>
+
+            <div class="experience__timeline">
+
+                <!-- Experience 1: Líder de Proyecto - Gobierno -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Líder de Proyecto</h3>
+                                <span class="experience-card__type experience-card__type--gobierno">
+                                    <i class="fas fa-building-columns"></i> Gobierno
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">Secretaría de Administración y Finanzas</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Jun 2025 – Actual
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Liderazgo de proyectos tecnológicos y toma de
+                                decisiones estratégicas.</li>
+                            <li><i class="fas fa-chevron-right"></i> Automatización de procesos institucionales,
+                                mejorando eficiencia operativa.</li>
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de aplicaciones web y móviles para
+                                modernización de servicios.</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de metodologías ágiles (Scrum) y
+                                gestión en Azure DevOps.</li>
+                            <li><i class="fas fa-chevron-right"></i> Coordinación de equipo técnico, seguimiento de
+                                tareas y control de entregables.</li>
+                            <li><i class="fas fa-chevron-right"></i> Análisis de datos para generación de insights de
+                                negocio.</li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">Gestión de Proyectos</span>
+                            <span class="tag">PHP + Framework</span>
+                            <span class="tag">Scrum</span>
+                            <span class="tag">Liderazgo de Equipo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: Full Stack Developer - London Academy -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Full Stack Developer</h3>
+                                <span class="experience-card__type experience-card__type--remoto">
+                                    <i class="fas fa-laptop-house"></i> Remoto – Part Time
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">London Academy</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Sep 2024 – Feb 2025
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de panel LMS en .NET para automatización
+                                de contenido educativo.</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de paneles (docente/estudiante) con
+                                automatización de evaluaciones.</li>
+                            <li><i class="fas fa-chevron-right"></i> Diseño de base de datos y lógica de negocio
+                                optimizada.</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de triggers y SP para automatización
+                                de procesos.</li>
+                            <li><i class="fas fa-chevron-right"></i> Mejora del flujo operativo reduciendo errores
+                                manuales.</li>
+                            <li><i class="fas fa-chevron-right"></i> Participación en UX/UI (Figma) y adopción de Scrum.
+                            </li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">.NET</span>
+                            <span class="tag">LMS</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Scrum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Full Stack Developer - Baker Robotics -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Full Stack Developer</h3>
+                                <span class="experience-card__type experience-card__type--remoto">
+                                    <i class="fas fa-laptop-house"></i> Remoto
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">Baker Robotics</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Nov 2022 – Sep 2024
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de plataformas para auditorías internas
+                                y sistemas fintech.</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de autenticación segura (2FA,
+                                Identity).</li>
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de APIs REST escalables.</li>
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de apps móviles con Flutter
+                                (arquitectura DDD + Bloc).</li>
+                            <li><i class="fas fa-chevron-right"></i> Integración de sistemas financieros y manejo de
+                                datos sensibles.</li>
+                            <li><i class="fas fa-chevron-right"></i> Análisis de datos con R para optimización de
+                                procesos.</li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">.NET</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">DDD + Bloc</span>
+                            <span class="tag">Fintech</span>
+                            <span class="tag">R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 4: Director TI - Netium Telecom (with achievements) -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Director TI / Líder de Proyecto / Desarrollador</h3>
+                                <span class="experience-card__type experience-card__type--presencial">
+                                    <i class="fas fa-building"></i> Presencial
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">Netium Telecom</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Jun 2019 – Oct 2022
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Key Achievements -->
+                        <div class="experience-card__achievements">
+                            <h4 class="experience-card__achievements-title">
+                                <!-- <i class="fas fa-trophy"></i> --> Logros Clave
+                            </h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <span class="achievement-item__number">90%</span>
+                                    <span class="achievement-item__text">Automatización de procesos internos</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-item__number">50%</span>
+                                    <span class="achievement-item__text">Reducción en tiempos de respuesta del call
+                                        center</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-item__number">80%</span>
+                                    <span class="achievement-item__text">Reducción en tiempo de registro en
+                                        eventos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Dirección del área TI y gestión de presupuesto.
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Liderazgo de equipos multidisciplinarios.</li>
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de sistemas internos (facturación,
+                                clientes, soporte).</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de soluciones VoIP (Issabel en
+                                Linux).</li>
+                            <li><i class="fas fa-chevron-right"></i> Integración de APIs y automatización de procesos.
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de apps móviles y sistemas web
+                                empresariales.</li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">Liderazgo</span>
+                            <span class="tag">ERP</span>
+                            <span class="tag">VoIP</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Facturación</span>
+                            <span class="tag">Apps Móviles</span>
+                            <span class="tag">PHP + Codeignite v3 y v4</span>
+                            <span class="tag">VPS</span>
+                            <span class="tag">SP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 5: Desarrollador JR - Lafin Matriz -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Desarrollador JR</h3>
+                                <span class="experience-card__type experience-card__type--presencial">
+                                    <i class="fas fa-building"></i> Presencial
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">Lafin Matriz</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Nov 2018 – May 2019
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Desarrollo de módulo para control de procesos
+                                internos.</li>
+                            <li><i class="fas fa-chevron-right"></i> Implementación de arquitectura MVC.</li>
+                            <li><i class="fas fa-chevron-right"></i> Mejora en mantenibilidad y escalabilidad del
+                                sistema.</li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">MVC</span>
+                            <span class="tag">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 6: Desarrollador Web JR - CEISP -->
+                <div class="animate-on-scroll timeline__item">
+                    <div class="experience-card">
+                        <div class="experience-card__header">
+                            <div class="experience-card__title-group">
+                                <h3 class="experience-card__title">Desarrollador Web JR</h3>
+                                <span class="experience-card__type experience-card__type--gobierno">
+                                    <i class="fas fa-building-columns"></i> Gobierno
+                                </span>
+                            </div>
+                            <div class="experience-card__meta">
+                                <span class="experience-card__company">CEISP</span>
+                                <span class="experience-card__date">
+                                    <i class="fas fa-calendar-alt"></i> Feb 2018 – Oct 2018
+                                </span>
+                            </div>
+                        </div>
+
+                        <ul class="experience-card__responsibilities">
+                            <li><i class="fas fa-chevron-right"></i> Mantenimiento y desarrollo de sistemas en .NET.
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> Creación de módulos y páginas orientadas al sector
+                                público.</li>
+                        </ul>
+
+                        <div class="experience-card__tags">
+                            <span class="tag">.NET</span>
+                            <span class="tag">Desarrollo Web</span>
+                            <span class="tag">Sector Público</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Habilidades</h2>
+                    <p class="section-subtitle">Technologías y herramientas que domino</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Backend -->
+                    <div class="animate-on-scroll">
+                        <div class="card h-full">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="contact-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3 class="text-xl font-bold font-display">Backend</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">C# / .NET</span>
+                                        <span class="text-sm text-accent-light">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">ASP.NET / APIs REST</span>
+                                        <span class="text-sm text-accent-light">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">SQL Server</span>
+                                        <span class="text-sm text-accent-light">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Microservicios / DDD</span>
+                                        <span class="text-sm text-accent-light">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="animate-on-scroll">
+                        <div class="card h-full">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="contact-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3 class="text-xl font-bold font-display">Frontend</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">React</span>
+                                        <span class="text-sm text-accent-light">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Angular</span>
+                                        <span class="text-sm text-accent-light">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Vue.js</span>
+                                        <span class="text-sm text-accent-light">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">HTML5 / CSS3</span>
+                                        <span class="text-sm text-accent-light">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="animate-on-scroll">
+                        <div class="card h-full">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="contact-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3 class="text-xl font-bold font-display">Mobile</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Flutter</span>
+                                        <span class="text-sm text-accent-light">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                               
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Kotlin</span>
+                                        <span class="text-sm text-accent-light">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud / DevOps -->
+                    <div class="animate-on-scroll">
+                        <div class="card h-full">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="contact-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h3 class="text-xl font-bold font-display">Cloud / DevOps</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Azure</span>
+                                        <span class="text-sm text-accent-light">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">CI/CD</span>
+                                        <span class="text-sm text-accent-light">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Docker</span>
+                                        <span class="text-sm text-accent-light">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm font-medium">Clean Architecture</span>
+                                        <span class="text-sm text-accent-light">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Tags -->
+                <div class="mt-12 animate-on-scroll">
+                    <div class="card">
+                        <h3 class="text-lg font-bold font-display mb-4 text-center">Tecnologías</h3>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="badge">C#</span>
+                            <span class="badge">PHP</span>
+                            <span class="badge">.NET</span>
+                            <span class="badge">ASP.NET</span>
+                            <span class="badge">APIs REST</span>
+                            <span class="badge">Flutter</span>
+                            <span class="badge">Kotlin</span>
+                            <span class="badge">React</span>
+                            <span class="badge">Angular</span>
+                            <span class="badge">Vue</span>
+                            <span class="badge">SQL Server</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">SQLite</span>
+                            <span class="badge">Azure</span>
+                            <span class="badge">CI/CD</span>
+                            <span class="badge">Microservicios</span>
+                            <span class="badge">DDD</span>
+                            <span class="badge">Clean Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Proyectos</h2>
+                    <p class="section-subtitle">Proyectos destacados en los que he trabajado</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+                    <div class="animate-on-scroll project-card">
+                        <div class="p-6">
+                            <!-- Placeholder Image -->
+                            <div
+                                class="w-full h-40 bg-gradient-to-br from-accent/20 to-accent-cyan/20 rounded-lg mb-4 flex items-center justify-center">
+                                <i class="fas fa-hospital-user text-4xl text-accent/50"></i>
+                            </div>
+                            <h3 class="text-xl font-bold font-display mb-2">PlusaMED</h3>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Sistema clínico integral para gestión de pacientes, citas y expedientes médicos.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge text-xs">PHP</span>
+                                <span class="badge text-xs">VUE</span>
+                                <span class="badge text-xs">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="animate-on-scroll project-card">
+                        <div class="p-6">
+                            <!-- Placeholder Image -->
+                            <div
+                                class="w-full h-40 bg-gradient-to-br from-accent/20 to-accent-cyan/20 rounded-lg mb-4 flex items-center justify-center">
+                                <i class="fas fa-building text-4xl text-accent/50"></i>
+                            </div>
+                            <h3 class="text-xl font-bold font-display mb-2">HybridNet</h3>
+                            <p class="text-gray-400 text-sm mb-4">
+                                ERP especializado para empresas de telecomunicaciones con gestión de clientes y
+                                servicios.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge text-xs">PHP</span>
+                                <span class="badge text-xs">Codeigniter</span>
+                                <span class="badge text-xs">MySQL</span>
+                                <span class="badge text-xs">VPS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="animate-on-scroll project-card">
+                        <div class="p-6">
+                            <!-- Placeholder Image -->
+                            <div
+                                class="w-full h-40 bg-gradient-to-br from-accent/20 to-accent-cyan/20 rounded-lg mb-4 flex items-center justify-center">
+                                <i class="fas fa-tooth text-4xl text-accent/50"></i>
+                            </div>
+                            <h3 class="text-xl font-bold font-display mb-2">DentaFlow</h3>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Sistema de gestión clínica dental con agenda, historial de pacientes y facturación.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge text-xs">PHP</span>
+                                <span class="badge text-xs">MySQL</span>
+                                <span class="badge text-xs">VPS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Contacto</h2>
+                    <p class="section-subtitle">¿Interesado en trabajar juntos? ¡Hablemos!</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="animate-on-scroll space-y-4">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <a href="mailto:lugomartinm@gmail.com"
+                                    class="font-medium hover:text-accent transition-colors">
+                                    lugomartinm@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Teléfono</p>
+                                <a href="tel:9902680440" class="font-medium hover:text-accent transition-colors">
+                                    +52 990 268 0440
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Ubicación</p>
+                                <p class="font-medium">Mérida Yuc, México.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="animate-on-scroll">
+                        <div class="card h-full">
+                            <h3 class="text-xl font-bold font-display mb-6">Conectemos</h3>
+                            <p class="text-gray-400 mb-6">
+                                Puedes encontrarme en las siguientes plataformas o contactarme directamente.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/joselugo" target="_blank" rel="noopener noreferrer"
+                                    class="social-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/jose-lugo-/" target="_blank" rel="noopener noreferrer"
+                                    class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:lugomartinm@gmail.com" class="social-link" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-accent/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="text-center md:text-left">
+                    <p class="text-lg font-bold font-display">
+                        José Manuel <span class="gradient-text">Lugo Martín</span>
+                    </p>
+                    <p class="text-sm text-gray-500">Full Stack Developer</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#inicio" class="text-sm text-gray-500 hover:text-accent transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="text-sm text-gray-500 hover:text-accent transition-colors">Sobre Mí</a>
+                    <a href="#contacto" class="text-sm text-gray-500 hover:text-accent transition-colors">Contacto</a>
+                </div>
+                <p class="text-sm text-gray-500">
+                    © 2026 Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll animation observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation to skill bars when visible
+        const skillBars = document.querySelectorAll('.skill-bar-fill');
+
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const width = entry.target.style.width;
+                    entry.target.style.width = '0';
+                    setTimeout(() => {
+                        entry.target.style.width = width;
+                    }, 100);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        skillBars.forEach(bar => {
+            skillObserver.observe(bar);
+        });
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
